@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="55.458" tests="3" skipped="0" failures="3" errors="0" timestamp="2025-11-29T04:49:59.247151100Z">
+<testcase classname="Login Functionality" name="Login with valid credentials" time="14.065">
+<failure type="java.lang.AssertionError" message="expected [My Account] but found [Account Login]">
+<![CDATA[java.lang.AssertionError: expected [My Account] but found [Account Login]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitionFiles.TC_002.user_should_be_logged_in_successfully(TC_002.java:50)
+	at ✽.User should be logged in successfully(file:///C:/Users/Admin/eclipse-workspace/Penta/allfeatures/Login.feature:8)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the browser and opens the login page....................passed
+When User enters a valid Email ID...........................................passed
+And User enters a valid Password............................................passed
+And User clicks on the Login button.........................................passed
+Then User should be logged in successfully..................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Registration functionality" name="To verify Registration functionality by enterung valid credentials" time="15.338">
+<failure type="java.lang.AssertionError" message="expected [Your Account Has Been Created!] but found [Register Account]">
+<![CDATA[java.lang.AssertionError: expected [Your Account Has Been Created!] but found [Register Account]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitionFiles.TC_001.user_should_be_registered(TC_001.java:80)
+	at ✽.User should be registered(file:///C:/Users/Admin/eclipse-workspace/Penta/allfeatures/Reg.feature:16)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User has opened the browser and launched the application..............passed
+When User enters valid first name...........................................passed
+And User enters valid last name.............................................passed
+And User enters valid E-mail................................................passed
+And User enters Telephone...................................................passed
+And User enters password....................................................passed
+And User enters password confirm............................................passed
+And User clicks on radio button no..........................................passed
+And User clicks on privacy policy checkbox..................................passed
+And User clicks on continue button..........................................passed
+Then User should be registered..............................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Verify search functionality" time="24.94">
+<failure type="java.lang.AssertionError" message="expected [Search - mac] but found [Search - samsung]">
+<![CDATA[java.lang.AssertionError: expected [Search - mac] but found [Search - samsung]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinitionFiles.TC_003.user_should_see_the_searched_product_displayedd(TC_003.java:57)
+	at ✽.User should see the searched product displayedd(file:///C:/Users/Admin/eclipse-workspace/Penta/allfeatures/Search.feature:10)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User has logged inn...................................................passed
+When User logs in...........................................................passed
+And User enters a valid product name in the search boxx.....................passed
+And User clicks on search buttonss..........................................passed
+Then User should see the searched product displayedd........................failed
+]]></system-out>
+</testcase>
+</testsuite>

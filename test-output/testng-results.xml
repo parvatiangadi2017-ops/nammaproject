@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-28T20:49:56 GMT-08:00" name="Default suite" finished-at="2025-11-28T20:50:55 GMT-08:00" duration-ms="59137">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.Runfile@65e98b1c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-11-28T20:49:56 GMT-08:00" name="Default test" finished-at="2025-11-28T20:50:55 GMT-08:00" duration-ms="59137">
+      <class name="runnerfiles.Runfile">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerfiles.Runfile@65e98b1c]" started-at="2025-11-28T20:49:56 GMT-08:00" name="setUpClass" finished-at="2025-11-28T20:49:59 GMT-08:00" duration-ms="3179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@67b100fe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.Runfile@65e98b1c]" started-at="2025-11-28T20:49:59 GMT-08:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-28T20:50:14 GMT-08:00" duration-ms="14490" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [My Account] but found [Account Login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [My Account] but found [Account Login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at stepDefinitionFiles.TC_002.user_should_be_logged_in_successfully(TC_002.java:50)
+at ✽.User should be logged in successfully(file:///C:/Users/Admin/eclipse-workspace/Penta/allfeatures/Login.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.Runfile@65e98b1c]" started-at="2025-11-28T20:50:14 GMT-08:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-28T20:50:29 GMT-08:00" duration-ms="15374" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To verify Registration functionality by enterung valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Your Account Has Been Created!] but found [Register Account]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Your Account Has Been Created!] but found [Register Account]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at stepDefinitionFiles.TC_001.user_should_be_registered(TC_001.java:80)
+at ✽.User should be registered(file:///C:/Users/Admin/eclipse-workspace/Penta/allfeatures/Reg.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.Runfile@65e98b1c]" started-at="2025-11-28T20:50:29 GMT-08:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-28T20:50:54 GMT-08:00" duration-ms="24964" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify search functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Search - mac] but found [Search - samsung]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Search - mac] but found [Search - samsung]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at stepDefinitionFiles.TC_003.user_should_see_the_searched_product_displayedd(TC_003.java:57)
+at ✽.User should see the searched product displayedd(file:///C:/Users/Admin/eclipse-workspace/Penta/allfeatures/Search.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerfiles.Runfile@65e98b1c]" started-at="2025-11-28T20:50:54 GMT-08:00" name="tearDownClass" finished-at="2025-11-28T20:50:55 GMT-08:00" duration-ms="792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runnerfiles.Runfile -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
